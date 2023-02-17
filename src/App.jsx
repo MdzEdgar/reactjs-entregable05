@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import ProtectedHome from './components/ProtectedHome'
+import ProtectedRoutes from './components/ProtectedRoutes'
 import Home from './pages/Home'
 import Pokedex from './pages/Pokedex'
 import Pokemon from './pages/Pokemon'
@@ -10,11 +12,18 @@ function App() {
     <div className="App">
       <h2>App Pokemon</h2>
       <Routes>
-        <Route path='/' element={<Home />}/>
 
-        <Route path='/pokedex' element={<Pokedex />} />
+        <Route element={<ProtectedHome />}>
+          <Route path='/' element={<Home />}/>
+        </Route>
 
-        <Route path='/pokedex/:id' element={<Pokemon />} />
+        <Route element={<ProtectedRoutes />}>
+
+          <Route path='/pokedex' element={<Pokedex />} />
+
+          <Route path='/pokedex/:id' element={<Pokemon />} />
+        </Route>
+
       </Routes>
     </div>
   )
