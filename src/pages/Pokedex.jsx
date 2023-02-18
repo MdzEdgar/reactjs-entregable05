@@ -46,7 +46,7 @@ const Pokedex = () => {
   useEffect(() => {
     const pokemonByName = pokemons.filter(pokemon => pokemon.name.includes(pokemonName.toLowerCase()))
     setPokemonsFilter(pokemonByName)
-  }, [pokemonName])
+  }, [pokemonName, pokemons])
 
   useEffect(() => {
     const URL = "https://pokeapi.co/api/v2/type/"
@@ -73,7 +73,7 @@ const Pokedex = () => {
       </form>
       <section>
         {
-          pokemons.map(pokemon => <PokemonCard key={pokemon.url} pokemonUrl={pokemon.url}/>)
+          pokemonsFilter.map(pokemon => <PokemonCard key={pokemon.url} pokemonUrl={pokemon.url}/>)
           //{pokemonsFilter.map}
         }
       </section>
