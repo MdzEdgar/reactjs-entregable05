@@ -4,6 +4,7 @@
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .pokemonCard__header {
