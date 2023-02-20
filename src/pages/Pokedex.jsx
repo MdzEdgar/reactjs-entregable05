@@ -107,7 +107,7 @@ const Pokedex = () => {
   }, [pokemons])
 
   return (
-    <main>
+    <main className='Pokedex'>
       <p><span>Welcome {nameTrainer}</span>, here you can find information about of your favorite pokemon</p>
       <form onSubmit={handleSubmit}>
         <div>
@@ -121,7 +121,7 @@ const Pokedex = () => {
           }
         </select>
       </form>
-      <section>
+      <section className='Pokedex__list'>
         {
           pokemonsInPage.map(pokemon => <PokemonCard key={pokemon.url} pokemonUrl={pokemon.url}/>)
         }
