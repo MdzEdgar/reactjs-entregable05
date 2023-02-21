@@ -14,6 +14,7 @@ const Pokedex = () => {
     handlePreviusPage,
     handleNextPage,
     pagesInBlock,
+    setCurrentPage
   } = usePokedex();
 
   return (
