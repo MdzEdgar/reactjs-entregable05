@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setNameTrainerGlobal } from '../store/slices/nameTrainer.slice'
+import "./styles/Home.css"
 
 const Home = () => {
 
@@ -13,16 +14,16 @@ const Home = () => {
   }
 
   return (
-    <main>
-      <section>
-        <div>
+    <main className='Home'>
+      <section className='Home__section'>
+        <div className='Home__img shine'>
           <img src="/images/pokedex.png" alt="" />
         </div>
-        <h2>Hello trainer!</h2>
-        <p>Give me your name to start!</p>
-        <form onSubmit={handleSubmit}>
-          <input id='nameTrainer' type="text" placeholder='your name...' required />
-          <button>Start</button>
+        <h2 className='Home__welcome'>Hello trainer!</h2>
+        <p className='Home__instruction'>Give me your name to start!</p>
+        <form className='Home__form' onSubmit={handleSubmit}>
+          <input className='Home__form-input' id='nameTrainer' type="text" placeholder='your name...' required />
+          <button className='Home__form-btn' >Start</button>
         </form>
       </section>
     </main>
