@@ -32,6 +32,19 @@
   margin-bottom: 20px;
 }
 
+@media (min-width: 376px) {
+  .Pokedex__form{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Pokedex__form-select{
+    height: 50px;
+    margin-top: 0;
+  }
+}
+
 .Pokedex__form div {
   display: flex;
   flex-direction: row;
