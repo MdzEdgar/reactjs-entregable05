@@ -1,0 +1,28 @@
+.Pokedex__welcome {
+  text-align: center;
+}
+
+.Pokedex__welcome > span {
+  color: #FE1936;
+  font-weight: 700;
+}
+
+.Pokedex__form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pokedex__form div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pokedex__form select {
+  width: 80%;
+}
