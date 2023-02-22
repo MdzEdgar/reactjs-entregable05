@@ -77,8 +77,12 @@
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
+.Pokedex__pagination{
+  margin-top: 5px;
+}
+
 .Pokedex__pagination ul {
-  padding: 10px 0;
+  padding: 10px 5px;
   display: flex;
   flex-direction: row;
   gap: 3px;
@@ -96,7 +100,24 @@
   cursor: pointer;
 }
 
+.Pokedex__pagination ul li.prev:hover,.Pokedex__pagination ul li.next:hover{
+  color: #DD1A1A;
+  font-weight: 700;
+}
+
 .Pokedex__pagination ul li.page {
   border-radius: 6px;
   border: 0.5px solid black
+}
+
+.Pokedex__pagination ul li.page:hover{
+  background-color: #cc0707;
+  border: 1px solid #DD1A1A;
+  color: white;
+}
+
+.Pokedex__pagination ul li.page.current {
+  background-color: #cc0707;
+  border: 1px solid #DD1A1A;
+  color: white;
 }

@@ -15,7 +15,8 @@ const Pokedex = () => {
     handlePreviusPage,
     handleNextPage,
     pagesInBlock,
-    setCurrentPage
+    setCurrentPage,
+    currentPage
   } = usePokedex();
 
   return (
@@ -40,13 +41,13 @@ const Pokedex = () => {
       </section>
       <section className='Pokedex__pagination'>
         <ul>
-          <li onClick={handlePreviusPage} >{"<<"}</li>
+          <li className='prev' onClick={handlePreviusPage} >{"<<"}</li>
           <li onClick={() => setCurrentPage(1)} >...</li>
           {
-            pagesInBlock.map(page => <li className='page' onClick={() => setCurrentPage(page)} key={page}>{page}</li>)
+            pagesInBlock.map(page => <li className={`page ${page === currentPage ? 'current' : ''}`} onClick={() => setCurrentPage(page)} key={page}>{page}</li>)
           }
           <li onClick={() => setCurrentPage(lastPage)}>...</li>
-          <li onClick={handleNextPage} >{">>"}</li>
+          <li className='next' onClick={handleNextPage} >{">>"}</li>
         </ul>
       </section>
     </main>
