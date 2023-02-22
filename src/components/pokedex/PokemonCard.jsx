@@ -26,8 +26,8 @@ const PokemonCard = ({pokemonUrl}) => {
           <img src={pokemon?.sprites.other["official-artwork"].front_default} alt="" />
         </div>
         <h3 className='pokemonCard__name'>{pokemon?.name}</h3>
-        <h4 className='pokemonCard__types'>{pokemon?.types[0].type.name} {pokemon?.types[1] && `/${pokemon?.types[1].type.name}` }</h4>
-        <h6 className='pokemonCard__type-subtitle'>Tipo</h6>
+        <h4 className='pokemonCard__types'>{pokemon?.types[0].type.name} {pokemon?.types[1] && `/ ${pokemon?.types[1].type.name}` }</h4>
+        <h6 className='pokemonCard__type-subtitle'>Type</h6>
         <hr className='pokemonCard__line' />
         <section className='pokemonCard__stats'>
           {

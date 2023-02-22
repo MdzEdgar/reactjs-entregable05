@@ -25,15 +25,17 @@
 .pokemonCard__name {
   text-align: center;
   margin-top: 50px;
-  font-size: 35px;
+  font-size: 38px;
   text-transform: capitalize;
+  font-family: var(--game-font);
 }
 
 .pokemonCard__types {
   text-align: center;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 22px;
   margin: 4px 0;
+  font-family: var(--game-font);
 }
 
 .pokemonCard__type-subtitle {
@@ -62,11 +64,14 @@
   text-transform: uppercase;
   color: gray;
   font-weight: normal;
+  font-size: 18px;
+  font-family: var(--game-font);
 }
 
 .pokemonCard__stat-value {
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 4px;
+  font-family: var(--game-font);
 }
 
 /* types styles */
