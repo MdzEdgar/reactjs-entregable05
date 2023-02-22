@@ -43,7 +43,7 @@ const Pokedex = () => {
           <li onClick={handlePreviusPage} >{"<<"}</li>
           <li onClick={() => setCurrentPage(1)} >...</li>
           {
-            pagesInBlock.map(page => <li onClick={() => setCurrentPage(page)} key={page}>{page}</li>)
+            pagesInBlock.map(page => <li className='page' onClick={() => setCurrentPage(page)} key={page}>{page}</li>)
           }
           <li onClick={() => setCurrentPage(lastPage)}>...</li>
           <li onClick={handleNextPage} >{">>"}</li>
