@@ -169,4 +169,9 @@
     max-width: 350px;
     width: 25%;
   }
+
+  .Pokedex__pagination ul li{
+    height: 45px;
+    width: 45px;
+  }
 }
