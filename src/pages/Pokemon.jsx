@@ -51,10 +51,10 @@ const Pokemon = () => {
           </div>
         </div>
         
-        <div className='Pokemon__body-types'>
-          <div>
+        <div className='Pokemon__body-extra'>
+          <div className='Pokemon__types'>
             <h3>Type</h3>
-            <div>
+            <div className='Pokemon__types-value'>
               {pokemon?.types.map((type) => (
                 <div key={type.type.name}>
                   <span>{type.type.name}</span>
@@ -64,7 +64,7 @@ const Pokemon = () => {
           </div>
           <div>
             <h3>Abilities</h3>
-            <div>
+            <div className='Pokemon__body-ability'>
               {pokemon?.abilities.map((ability) => (
                 <div key={ability.ability.name}>
                   <span>{ability.ability.name}</span>
