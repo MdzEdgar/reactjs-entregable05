@@ -27,11 +27,11 @@ const Pokemon = () => {
   }, [])
 
   return (
-    <main className='Pokemon'>
+    <main className={`Pokemon`}>
       <button onClick={goBack} className='Pokemon__back'>
         <i className='bx bxs-chevron-left'></i> Back
       </button>
-      <section className='Pokemon__header'>
+      <section className={`Pokemon__header border-${pokemon?.types[0].type.name}`} style={{borderBottom: "none", borderWidth: "10px", borderTopLeftRadius: "6px", borderTopRightRadius: "6px"}}>
         {/* Parte superior */}
         <section className={`Pokemon__header-bg bg-lg-${pokemon?.types[0].type.name}`}>
           <div className='Pokemon__header-img'>
@@ -44,8 +44,8 @@ const Pokemon = () => {
       </section>
 
       {/* Body */}
-      <section className='Pokemon__body'>
-        <h2 className='Pokemon__body-id'># {pokemon?.id}</h2>
+      <section className={`Pokemon__body border-${pokemon?.types[0].type.name}`} style={{ borderTop: "none", borderWidth: "10px", borderBottomLeftRadius: "6px", borderBottomRightRadius: "6px" }}>
+        <h2 className={`Pokemon__body-id fc-${pokemon?.types[0].type.name}`}># {pokemon?.id}</h2>
         <h2 className={`Pokemon__body-name fc-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h2>
 
         <div className='Pokemon__body-info'>

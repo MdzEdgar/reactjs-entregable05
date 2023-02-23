@@ -64,6 +64,7 @@ button.Pokemon__back:hover{
   border: 1px solid #D3D3D3;
   padding: 10px;
   text-align: center;
+  text-shadow: 0px 1px 2px #000;
 }
 
 .Pokemon__body-name {
@@ -325,6 +326,69 @@ gap: 25px;
   background-color: #6c31a3;
 }
 
+/* border normal */
+.border-normal {
+  border: 10px solid #735259;
+}
+.border-fighting {
+  border: 10px solid #96402A;
+}
+.border-flying {
+  border: 10px solid #beb14c;
+}
+.border-poison {
+  border: 10px solid #5B3184;
+}
+.border-ground {
+  border: 10px solid #654008;
+}
+.border-rock {
+  border: 10px solid #7E7E7E;
+}
+.border-bug {
+  border: 10px solid #037216;
+}
+.border-ghost {
+  border: 10px solid #323569;
+}
+.border-steel {
+  border: 10px solid #5E736C;
+}
+.border-fire {
+  border: 10px solid #F96D6F;
+}
+.border-water {
+  border: 10px solid #133258;
+}
+.border-grass {
+  border: 10px solid #7EC6C5;
+}
+.border-electric {
+  border: 10px solid #0C1395;
+}
+.border-psychic {
+  border: 10px solid #E52D2D;
+}
+.border-ice {
+  border: 10px solid #6FBEDF;
+}
+.border-dragon {
+  border: 10px solid #478A93;
+}
+.border-dark {
+  border: 10px solid #030706;
+}
+.border-fairy {
+  border: 10px solid #971B45;
+}
+.border-unknown {
+  border: 10px solid #696767;
+}
+.border-shadow {
+  border: 10px solid #6c31a3;
+}
+
+/** type border **/
 .type-border-normal {
   border: 3px solid rgb(calc(115 + 90), calc(82 + 88), calc(89 + 91));
 }
