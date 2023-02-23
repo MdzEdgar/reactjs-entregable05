@@ -8,8 +8,6 @@
 .Pokemon__header-bg {
   height: 200px;
   position: relative;
-  /* background-color: green;
-  box-shadow: 0 -2px 5px #767272; */
 }
 
 .Pokemon__header-img {
@@ -48,10 +46,12 @@
 .Pokemon__body-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: min(70%, 500px);
   text-align: center;
   padding: 15px;
+  flex-wrap: wrap;
+gap: 25px;
 }
 
 .Pokemon__body-info  div {

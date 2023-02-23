@@ -27,7 +27,7 @@ const Pokemon = () => {
         {/* Parte superior */}
         <section className={`Pokemon__header-bg bg-lg-${pokemon?.types[0].type.name}`}>
           <div className='Pokemon__header-img'>
-            <img
+            <img className='Pokemon__image'
               src={pokemon?.sprites.other["official-artwork"].front_default}
               alt=""
             />
