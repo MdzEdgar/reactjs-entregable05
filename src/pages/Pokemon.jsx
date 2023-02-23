@@ -56,7 +56,7 @@ const Pokemon = () => {
             <h3>Type</h3>
             <div className='Pokemon__types-value'>
               {pokemon?.types.map((type) => (
-                <div className={`Pokemon__types-border type-${type.type.name} border-${type.type.name}`} key={type.type.name}>
+                <div className={`Pokemon__types-border type-${type.type.name} type-border-${type.type.name}`} key={type.type.name}>
                   <span>{type.type.name}</span>
                 </div>
               ))}

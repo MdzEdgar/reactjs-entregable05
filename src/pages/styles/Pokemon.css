@@ -294,82 +294,82 @@ gap: 25px;
   background-color: #6c31a3;
 }
 
-.border-normal {
+.type-border-normal {
   border: 3px solid rgb(calc(115 + 90), calc(82 + 88), calc(89 + 91));
 }
 
-.border-fighting {
+.type-border-fighting {
   border: 3px solid rgb(calc(150 + 90), calc(64 + 88), calc(42 + 91));
 }
 
-.border-flying {
+.type-border-flying {
   border: 3px solid rgb(calc(190 + 90), calc(177 + 88), calc(76 + 91));
 }
 
-.border-poison {
+.type-border-poison {
   border: 3px solid rgb(calc(91 + 90), calc(49 + 88), calc(132 + 91));
 }
 
-.border-ground {
+.type-border-ground {
   border: 3px solid rgb(calc(101 + 90), calc(64 + 88), calc(8 + 91));
 }
 
-.border-rock {
+.type-border-rock {
   border: 3px solid rgb(calc(126 + 90), calc(126 + 88), calc(126 + 91));
 }
 
-.border-bug {
+.type-border-bug {
   border: 3px solid rgb(calc(3 + 90), calc(114 + 88), calc(22 + 91));
 }
 
-.border-ghost {
+.type-border-ghost {
   border: 3px solid rgb(calc(50 + 90), calc(53 + 88), calc(105 + 91));
 }
 
-.border-steel {
+.type-border-steel {
   border: 3px solid rgb(calc(94 + 90), calc(115 + 88), calc(108 + 91));
 }
 
-.border-fire {
+.type-border-fire {
   border: 3px solid rgb(calc(249 + 90), calc(109 + 88), calc(111 + 91));
 }
 
-.border-water {
+.type-border-water {
   border: 3px solid rgb(calc(19 + 90), calc(50 + 88), calc(88 + 91));
 }
 
-.border-grass {
+.type-border-grass {
   border: 3px solid rgb(calc(126  +  90), calc(198  +  88), calc(197  +  91));
 }
 
-.border-electric {
+.type-border-electric {
   border: 3px solid rgb(calc(12 + 90), calc(19 + 88), calc(149 + 91));
 }
 
-.border-psychic {
+.type-border-psychic {
   border: 3px solid rgb(calc(229 + 90), calc(45 + 88), calc(45  +  91));
 }
 
-.border-ice {
+.type-border-ice {
   border: 3px solid rgb(calc(111 + 90), calc(190 + 88), calc(223  +  91));
 }
 
-.border-dragon {
+.type-border-dragon {
   border: 3px solid rgb(calc(71 + 90), calc(138 + 88), calc(147  +  91));
 }
 
-.border-dark {
+.type-border-dark {
   border: 3px solid rgb(calc(3 + 90), calc(7 + 88), calc(6  +  91));
 }
 
-.border-fairy {
+.type-border-fairy {
   border: 3px solid rgb(calc(151 + 90), calc(27 + 88), calc(69  +  91));
 }
 
-.border-unknown {
+.type-border-unknown {
   border: 3px solid rgb(calc(105 + 90), calc(103 + 88), calc(103  +  91));
 }
 
-.border-shadow {
+.type-border-shadow {
   border: 3px solid rgb(calc(108 + 90), calc(49 + 88), calc(163  +  91));
 }
