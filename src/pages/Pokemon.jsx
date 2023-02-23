@@ -46,7 +46,7 @@ const Pokemon = () => {
       {/* Body */}
       <section className='Pokemon__body'>
         <h2 className='Pokemon__body-id'># {pokemon?.id}</h2>
-        <h2 className='Pokemon__body-name'>{pokemon?.name}</h2>
+        <h2 className={`Pokemon__body-name fc-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h2>
 
         <div className='Pokemon__body-info'>
           <div>
