@@ -1,16 +1,21 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import "./styles/Pokemon.css"
 
 const Pokemon = () => {
   const [pokemon, setPokemon] = useState()
 
   const {id} = useParams()
+  const navigate = useNavigate();
 
   const getPercentBar = (stat) => {
     const percent = (stat * 100) / 255
     return `${percent}%`
+  }
+
+  const goBack = () => {
+    navigate(-1)
   }
 
   useEffect(() => {
@@ -23,6 +28,9 @@ const Pokemon = () => {
 
   return (
     <main className='Pokemon'>
+      <button onClick={goBack} className='Pokemon__back'>
+        <i className='bx bxs-chevron-left'></i> Back
+      </button>
       <section className='Pokemon__header'>
         {/* Parte superior */}
         <section className={`Pokemon__header-bg bg-lg-${pokemon?.types[0].type.name}`}>
