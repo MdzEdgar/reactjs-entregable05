@@ -25,8 +25,8 @@ const Pokemon = () => {
     <main className='Pokemon'>
       <section className='Pokemon__header'>
         {/* Parte superior */}
-        <section>
-          <div className='Pokemon__img'>
+        <section className='Pokemon__header-bg'>
+          <div className='Pokemon__header-img'>
             <img
               src={pokemon?.sprites.other["official-artwork"].front_default}
               alt=""
@@ -56,17 +56,17 @@ const Pokemon = () => {
             <h3>Type</h3>
             <div className='Pokemon__types-value'>
               {pokemon?.types.map((type) => (
-                <div key={type.type.name}>
+                <div className='Pokemon__types-border' key={type.type.name}>
                   <span>{type.type.name}</span>
                 </div>
               ))}
             </div>
           </div>
-          <div>
+          <div className='Pokemon__abilities'>
             <h3>Abilities</h3>
-            <div className='Pokemon__body-ability'>
+            <div className='Pokemon__abilities-value'>
               {pokemon?.abilities.map((ability) => (
-                <div key={ability.ability.name}>
+                <div className='Pokemon__abilities-border' key={ability.ability.name}>
                   <span>{ability.ability.name}</span>
                 </div>
               ))}
