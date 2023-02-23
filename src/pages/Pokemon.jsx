@@ -22,11 +22,11 @@ const Pokemon = () => {
   }, [])
 
   return (
-    <main>
-      <section>
+    <main className='Pokemon'>
+      <section className='Pokemon__header'>
         {/* Parte superior */}
         <section>
-          <div>
+          <div className='Pokemon__img'>
             <img
               src={pokemon?.sprites.other["official-artwork"].front_default}
               alt=""
@@ -36,11 +36,11 @@ const Pokemon = () => {
       </section>
 
       {/* Body */}
-      <section>
-        <h2># {pokemon?.id}</h2>
-        <h2>{pokemon?.name}</h2>
+      <section className='Pokemon__body'>
+        <h2 className='Pokemon__body-id'># {pokemon?.id}</h2>
+        <h2 className='Pokemon__body-name'>{pokemon?.name}</h2>
 
-        <div>
+        <div className='Pokemon__body-info'>
           <div>
             <h5>Weight</h5>
             <h4>{pokemon?.weight}</h4>
@@ -51,7 +51,7 @@ const Pokemon = () => {
           </div>
         </div>
         
-        <div>
+        <div className='Pokemon__body-types'>
           <div>
             <h3>Type</h3>
             <div>
