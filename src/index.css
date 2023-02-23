@@ -14,6 +14,7 @@ body{
 html{
   box-sizing: border-box;
   font-family: var(--principal-font);
+  scroll-behavior: smooth;
 }
 
 *, *::after, *::before{

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useSelector } from 'react-redux'
 import PokemonCard from '../components/pokedex/PokemonCard'
 import usePokedex from '../hooks/usePokedex'
@@ -16,8 +16,14 @@ const Pokedex = () => {
     handleNextPage,
     pagesInBlock,
     setCurrentPage,
-    currentPage
+    currentPage,
+    lastPage
   } = usePokedex();
+
+  const handleScroll = () => {
+    console.log("Scroll")
+    window.scrollTo(0, 0);
+  };
 
   return (
     <main className='Pokedex'>
@@ -34,6 +40,17 @@ const Pokedex = () => {
           }
         </select>
       </form>
+      <section className='Pokedex__pagination'>
+        <ul>
+          <li className='page' onClick={() => setCurrentPage(1)} ><i className='bx bxs-chevrons-left'></i></li>
+          <li className='page' onClick={handlePreviusPage} ><i className='bx bx-chevron-left'></i></li>
+          {
+            pagesInBlock.map(page => <li className={`page ${page === currentPage ? 'current' : ''}`} onClick={() => setCurrentPage(page)} key={page}>{page}</li>)
+          }
+          <li className='page' onClick={handleNextPage} ><i className='bx bx-chevron-right' ></i></li>
+          <li className='page' onClick={() => setCurrentPage(lastPage)}><i className='bx bxs-chevrons-right' ></i></li>
+        </ul>
+      </section>
       <section className='Pokedex__list'>
         {
           pokemonsInPage.map(pokemon => <PokemonCard key={pokemon.url} pokemonUrl={pokemon.url}/>)
@@ -41,13 +58,13 @@ const Pokedex = () => {
       </section>
       <section className='Pokedex__pagination'>
         <ul>
-          <li className='prev' onClick={handlePreviusPage} >{"<<"}</li>
-          <li onClick={() => setCurrentPage(1)} >...</li>
+          <li className='page' onClick={() => setCurrentPage(1)} ><i className='bx bxs-chevrons-left'></i></li>
+          <li className='page' onClick={handlePreviusPage} ><i className='bx bx-chevron-left'></i></li>
           {
             pagesInBlock.map(page => <li className={`page ${page === currentPage ? 'current' : ''}`} onClick={() => setCurrentPage(page)} key={page}>{page}</li>)
           }
-          <li onClick={() => setCurrentPage(lastPage)}>...</li>
-          <li className='next' onClick={handleNextPage} >{">>"}</li>
+          <li className='page' onClick={handleNextPage} ><i className='bx bx-chevron-right' ></i></li>
+          <li className='page' onClick={() => setCurrentPage(lastPage)}><i className='bx bxs-chevrons-right' ></i></li>
         </ul>
       </section>
     </main>
