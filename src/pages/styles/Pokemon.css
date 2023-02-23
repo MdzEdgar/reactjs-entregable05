@@ -1,6 +1,6 @@
 .Pokemon {
   margin: 75px auto 0;
-  max-width: 1280px;
+  max-width: 1000px;
   padding: 20px;
   position: relative;
 }
@@ -528,4 +528,29 @@ gap: 25px;
 }
 .fc-shadow {
   color: #6c31a3;
+}
+
+@media (min-width: 350px) {
+  .Pokemon__types-value{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 375px) {
+  .Pokemon__abilities-value{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Pokemon__body-info{
+    justify-content: space-evenly;
+    gap: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .Pokemon__body-extra {
+    flex-direction: row;
+  }
 }
