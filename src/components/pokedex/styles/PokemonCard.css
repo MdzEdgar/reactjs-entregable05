@@ -60,6 +60,10 @@
   grid-template-rows: repeat(2, 1fr);
 }
 
+.pokemonCard__stats > div:nth-child(6) {
+  line-height: 35px;
+}
+
 .pokemonCard__stat {
   text-align: center;
 }
