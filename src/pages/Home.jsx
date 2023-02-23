@@ -23,7 +23,7 @@ const Home = () => {
         <p className='Home__instruction'>Give me your name to start!</p>
         <form className='Home__form' onSubmit={handleSubmit}>
           <input className='Home__form-input' id='nameTrainer' type="text" placeholder='your name...' required />
-          <button className='Home__form-btn' >Start</button>
+          <button className='Home__form-btn' ><span className='blink_me'>Press Start</span></button>
         </form>
       </section>
     </main>

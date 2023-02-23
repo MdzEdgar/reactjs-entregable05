@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 40px;
 }
 
 .Home__form-input {
@@ -82,4 +82,14 @@
 .Home__form-btn:hover {
   background-color: #d60000;
   border-radius: 1px solid #D93F3F;
+}
+
+.blink_me {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
