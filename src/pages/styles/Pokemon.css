@@ -1,6 +1,6 @@
 .Pokemon {
   margin: 40px auto 0;
-  max-width: 1000px;
+  max-width: 1280px;
   padding: 20px;
 }
 
@@ -29,7 +29,6 @@
   gap: 10px;
   font-family: var(--game-font);
   background-color: #FFF;
-
 }
 .Pokemon__body-id{
   font-size: 42px;
@@ -42,7 +41,7 @@
 .Pokemon__body-name {
   font-size: 45px;
   color: #416460;
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 /*** Info ***/
@@ -50,7 +49,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: min(70%, 450px);
+  width: min(70%, 500px);
   text-align: center;
   padding: 15px;
 }
@@ -62,11 +61,11 @@
 }
 
 .Pokemon__body-info h5 {
-  font-size: 19px;
+  font-size: 28px;
 }
 
 .Pokemon__body-info h4 {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 /*** Extra ***/
@@ -77,8 +76,8 @@
   text-align: center;
   align-items: center;
   gap: 35px;
-  font-size: 25px;
-  width: min(95%, 650px);
+  font-size: 30px;
+  width: min(95%, 850px);
 }
 
 .Pokemon__types {
@@ -97,6 +96,7 @@
 .Pokemon__types-border {
   padding: 4px 25px;
   border: 1px solid black;
+  font-size: 28px;
 }
 
 .Pokemon__abilities {
@@ -116,10 +116,47 @@
   border: 1px solid #D3D3D3;
   border-radius: 2px;
   padding: 4px 15px;
+  font-size: 28px;
 }
 
 
-/** Stats **/
+/*** Stats ***/
+.Pokemon__stats {
+  padding: 15px 0 0;
+  width: min(100%, 1100px);
+}
+
+.pokemon__stats-title{
+  font-size: 45px;
+  text-align: center;
+}
+
+.pokemon__stats-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pokemon__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pokemon__stat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon__stat-name{
+  font-size: 24px;
+}
+
+.pokemon__stat-value {
+  font-size: 20px;
+}
+
 .pokemon__stat-barGray {
   background-color: #F7F7F7;
   height: 25px;

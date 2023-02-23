@@ -75,7 +75,7 @@ const Pokemon = () => {
         </div>
 
         {/* Stats */}
-        <section className='pokemon__stats'>
+        <section className='Pokemon__stats'>
           <h2 className='pokemon__stats-title'>Stats</h2>
           <section className='pokemon__stats-info'>
             {pokemon?.stats.map((stat) => (
