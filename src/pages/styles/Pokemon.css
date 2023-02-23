@@ -89,14 +89,14 @@ gap: 25px;
 
 .Pokemon__types-value {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .Pokemon__types-border {
   padding: 4px 25px;
-  border: 1px solid black;
   font-size: 28px;
+  color: rgb(251, 251, 251);
 }
 
 .Pokemon__abilities {
@@ -230,4 +230,146 @@ gap: 25px;
 }
 .bg-lg-shadow {
   background: linear-gradient(180deg, #6c31a3, #FFF);
+}
+
+/* types */
+.type-normal {
+  background-color: #735259;
+}
+.type-fighting {
+  background-color: #96402A;
+}
+.type-flying {
+  background-color: #beb14c;
+}
+.type-poison {
+  background-color: #5B3184;
+}
+.type-ground {
+  background-color: #654008;
+}
+.type-rock {
+  background-color: #7E7E7E;
+}
+.type-bug {
+  background-color: #037216;
+}
+.type-ghost {
+  background-color: #323569;
+}
+.type-steel {
+  background-color: #5E736C;
+}
+.type-fire {
+  background-color: #F96D6F;
+}
+.type-water {
+  background-color: #133258;
+}
+.type-grass {
+  background-color: #7EC6C5;
+}
+.type-electric {
+  background-color: #0C1395;
+}
+.type-psychic {
+  background-color: #E52D2D;
+}
+.type-ice {
+  background-color: #6FBEDF;
+}
+.type-dragon {
+  background-color: #478A93;
+}
+.type-dark {
+  background-color: #030706;
+}
+.type-fairy {
+  background-color: #971B45;
+}
+.type-unknown {
+  background-color: #696767;
+}
+.type-shadow {
+  background-color: #6c31a3;
+}
+
+.border-normal {
+  border: 3px solid rgb(calc(115 + 90), calc(82 + 88), calc(89 + 91));
+}
+
+.border-fighting {
+  border: 3px solid rgb(calc(150 + 90), calc(64 + 88), calc(42 + 91));
+}
+
+.border-flying {
+  border: 3px solid rgb(calc(190 + 90), calc(177 + 88), calc(76 + 91));
+}
+
+.border-poison {
+  border: 3px solid rgb(calc(91 + 90), calc(49 + 88), calc(132 + 91));
+}
+
+.border-ground {
+  border: 3px solid rgb(calc(101 + 90), calc(64 + 88), calc(8 + 91));
+}
+
+.border-rock {
+  border: 3px solid rgb(calc(126 + 90), calc(126 + 88), calc(126 + 91));
+}
+
+.border-bug {
+  border: 3px solid rgb(calc(3 + 90), calc(114 + 88), calc(22 + 91));
+}
+
+.border-ghost {
+  border: 3px solid rgb(calc(50 + 90), calc(53 + 88), calc(105 + 91));
+}
+
+.border-steel {
+  border: 3px solid rgb(calc(94 + 90), calc(115 + 88), calc(108 + 91));
+}
+
+.border-fire {
+  border: 3px solid rgb(calc(249 + 90), calc(109 + 88), calc(111 + 91));
+}
+
+.border-water {
+  border: 3px solid rgb(calc(19 + 90), calc(50 + 88), calc(88 + 91));
+}
+
+.border-grass {
+  border: 3px solid rgb(calc(126  +  90), calc(198  +  88), calc(197  +  91));
+}
+
+.border-electric {
+  border: 3px solid rgb(calc(12 + 90), calc(19 + 88), calc(149 + 91));
+}
+
+.border-psychic {
+  border: 3px solid rgb(calc(229 + 90), calc(45 + 88), calc(45  +  91));
+}
+
+.border-ice {
+  border: 3px solid rgb(calc(111 + 90), calc(190 + 88), calc(223  +  91));
+}
+
+.border-dragon {
+  border: 3px solid rgb(calc(71 + 90), calc(138 + 88), calc(147  +  91));
+}
+
+.border-dark {
+  border: 3px solid rgb(calc(3 + 90), calc(7 + 88), calc(6  +  91));
+}
+
+.border-fairy {
+  border: 3px solid rgb(calc(151 + 90), calc(27 + 88), calc(69  +  91));
+}
+
+.border-unknown {
+  border: 3px solid rgb(calc(105 + 90), calc(103 + 88), calc(103  +  91));
+}
+
+.border-shadow {
+  border: 3px solid rgb(calc(108 + 90), calc(49 + 88), calc(163  +  91));
 }
