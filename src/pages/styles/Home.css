@@ -47,6 +47,11 @@
   }
 }
 
+.Home__welcome {
+  color: #d60000;
+  font-size: 42px;
+}
+
 
 .Home__form {
   width: 80%;
