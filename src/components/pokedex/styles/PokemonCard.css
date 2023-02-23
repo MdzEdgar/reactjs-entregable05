@@ -17,6 +17,10 @@
   background-color: #FFFFFF;
 }
 
+.pokemonCard__body h3 {
+  min-height: 91px;
+}
+
 .pokemonCard__img {
   position: absolute;
   top: 0;
