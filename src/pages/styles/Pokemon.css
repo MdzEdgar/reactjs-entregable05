@@ -6,14 +6,14 @@
 
 /*** Header ***/
 .Pokemon__header-bg {
-  height: 250px;
+  height: 100px;
   position: relative;
   /* background-color: green;
   box-shadow: 0 -2px 5px #767272; */
 }
 
 .Pokemon__header-img {
-  width: 320px;
+  width: 150px;
   position: absolute;
   top: -50px;
   left: 50%;
