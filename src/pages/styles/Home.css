@@ -1,7 +1,17 @@
+.header-home {
+  background-color: #fefefe;
+}
+
+.header-home img {
+  height: min(80vh, 100px);
+  width: 100%;
+}
+
 .Home{
   font-family: var(--game-font);
   font-size: 25px;
   background-image: linear-gradient(to bottom, #ffffff, #fdfdfd, #fafafa, #f8f8f8, #f6f6f6);
+  padding-top: 8px;
 }
 
 .Home__section{
@@ -9,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: stretch;
   gap: 25px;
 }
 
