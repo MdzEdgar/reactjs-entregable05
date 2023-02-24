@@ -12,10 +12,11 @@
   font-size: 25px;
   background-image: linear-gradient(to bottom, #ffffff, #fdfdfd, #fafafa, #f8f8f8, #f6f6f6);
   padding-top: 8px;
+  min-height: 80vh;
+  background-color: #fefefe;
 }
 
 .Home__section{
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +63,9 @@
   font-size: 42px;
 }
 
+.Home__instruction {
+  margin: 0;
+}
 
 .Home__form {
   width: 80%;

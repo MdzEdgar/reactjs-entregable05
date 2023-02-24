@@ -31,6 +31,9 @@ const Home = () => {
           </form>
         </section>
       </main>
+      <footer>
+        <div className='footer-red' ></div>
+      </footer>
     </>
   )
 }
