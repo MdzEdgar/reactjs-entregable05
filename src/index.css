@@ -16,6 +16,7 @@ html{
   font-family: var(--principal-font);
   scroll-behavior: smooth;
 cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;
+background-color: #e5e5e5;
 }
 
 *, *::after, *::before{
