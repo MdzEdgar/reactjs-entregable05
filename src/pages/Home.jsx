@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { setNameTrainerGlobal } from '../store/slices/nameTrainer.slice'
 import "./styles/Home.css"
 
 const Home = () => {
-
   const dispatch = useDispatch()
 
   const handleSubmit = (e) => {
